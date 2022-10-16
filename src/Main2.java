@@ -74,4 +74,14 @@ public class Main2 {
         var res = String.join(" ", words);
         return res;
     }
+    public static int areaOrPerimeter (int l, int w) {
+        if (l == w){
+            return l*l;
+        }
+        return l * 2 + w * 2;
+    }
+    public static String smash(String... words) {
+        var res = String.join(" ", words);
+        return res;
+    }
 }
