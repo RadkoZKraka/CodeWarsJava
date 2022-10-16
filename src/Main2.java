@@ -18,9 +18,11 @@ public class Main2 {
 
         return Arrays.asList(sentence).contains(dict);
     }
+
     public static boolean xor(boolean a, boolean b) {
-        return a == b? false : true;
+        return a == b ? false : true;
     }
+
     public static int summation(int n) {
         var result = 0;
         for (int i = 0; i < n; i++) {
@@ -28,8 +30,9 @@ public class Main2 {
         }
         return result;
     }
+
     public static String updateLight(String current) {
-        switch (current){
+        switch (current) {
             case "red":
                 return "green";
             case "green":
@@ -39,21 +42,36 @@ public class Main2 {
         }
         return "";
     }
+
     public int min(int[] list) {
-       return  Arrays.stream(list).min().getAsInt();
+        return Arrays.stream(list).min().getAsInt();
     }
 
     public int max(int[] list) {
         return Arrays.stream(list).max().getAsInt();
     }
-    public static int[] countBy(int x, int n){
+
+    public static int[] countBy(int x, int n) {
         var arr = new int[n];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = x * (i + 1);
         }
         return arr;
     }
+
     static String greet(String name, String owner) {
         return name.equals(owner) ? "Hello boss" : "Hello guest";
+    }
+
+    public static int areaOrPerimeter(int l, int w) {
+        if (l == w) {
+            return l * l;
+        }
+        return l * 2 + w * 2;
+    }
+
+    public static String smash(String... words) {
+        var res = String.join(" ", words);
+        return res;
     }
 }
